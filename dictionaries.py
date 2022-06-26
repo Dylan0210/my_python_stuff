@@ -10,12 +10,10 @@ color = dict([('dylan','red'), ('ashlee', 'blue'), ('kenslee', 'pink')])   # usi
 print(color)
 
 
-
 # adding to dictionaries
 
 ages['denise'] = 60           # adding key 'denise' to the ages dictionary
 print(ages)
-
 
 
 # re-assigning values in dictionaries
@@ -24,12 +22,10 @@ weights['kenslee'] = 52         # re-assigning value to 'kenslee' in the weights
 print(weights)
 
 
-
 # deleting from dictionaries
 
 del color['dylan']        # deletes the key 'dylan' from the 'color' dictionary
 print(color)
-
 
 
 # using the 'ages' dictionary to view content within 
@@ -41,7 +37,6 @@ print(ages.values())     # gives JUST values of dictionary
 print(ages.keys())       # gives JUST keys of dictionary
 
 
-
 # returning a list from dictionary 'weights'
 
 names = list(weights.keys())   # returns the keys
@@ -49,7 +44,6 @@ print(names)
 
 weights_list = list(weights.values())   # returns the values
 print(weights_list)
-
 
 
 # returning a list of tuples called 'pairs' representing the key/values from dictionary 'color'
