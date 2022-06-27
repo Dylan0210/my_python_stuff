@@ -1,4 +1,3 @@
-#!/usr/bin/env python3.7
 
 # math operators
 a = int(4)
@@ -8,3 +7,4 @@ print(a - b)        # subtraction
 print(a * b)        # multiplication
 print(a / b)        # division
 print(a // b)       # floor division
+
