@@ -1,5 +1,4 @@
 # math operators
-
 a = int(4)
 b = int(3)
 print(a + b)        # addition

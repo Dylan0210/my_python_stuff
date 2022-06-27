@@ -3,4 +3,4 @@ fahrenheit = float(input("What temperature (in Fahrenheit) would you like conver
 # conversion equation
 celsius = (fahrenheit - 32) * 5 / 9
 
-print(fahrenheit, "F is", round(celsius, 2), "C")
+print(fahrenheit, "F is", round(celsius, 2), "C"
