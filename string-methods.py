@@ -7,6 +7,7 @@ print("Uppercase:", message.upper())
 print("Capitalized:", message.capitalize())
 print("Title Case:", message.title())
 
+
 words = message.split()
 print("Words:", words)
 
