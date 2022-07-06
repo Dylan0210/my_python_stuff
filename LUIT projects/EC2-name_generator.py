@@ -5,7 +5,7 @@ import string
 
 
 print("Welcome to the name generator")
-dep_list = "Marketing".lower(), "Accounting".lower(), "Finops".lower()
+dep_list = "Marketing".lower(), "Accounting".lower(), "FinOps".lower()
 dep_name = input("What department are you in?: ").lower()                                                   # Allow the user to input the name of their department that is used in the unique name
 
 while True:
