@@ -6,7 +6,7 @@ import string
 
 print("Welcome to the name generator")
 dep_list = "Marketing".lower(), "Accounting".lower(), "Finops".lower()
-dep_name = input("What department are you in?: ").lower()                                                           # Allow the user to input the name of their department that is used in the unique name
+dep_name = input("What department are you in?: ").lower()                                                   # Allow the user to input the name of their department that is used in the unique name
 
 while True:
     if dep_name not in dep_list:                                                                            # The only departments that should use this Name Generator are the Marketing, Accounting, and FinOps Departments
@@ -26,3 +26,4 @@ for _ in range(num):                                                            
     rand_num = random.randint(0,1000)
     ec2_id = str("".join((random.choice(string.ascii_letters + str(rand_num)) for num in range(6))))
     print(dep_name + ":", join_name + "_" + ec2_id)
+    
