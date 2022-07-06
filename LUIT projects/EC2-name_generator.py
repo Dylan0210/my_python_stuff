@@ -23,5 +23,6 @@ num = int(num)
 
 
 for _ in range(num):                                                                                        # Generate random characters and numbers that will be included in the ec2_id
-    ec2_id = str("".join((random.choice(string.ascii_letters + string.digits) for num in range(6))))
+    rand_num = random.randint(0,1000)
+    ec2_id = str("".join((random.choice(string.ascii_letters + str(rand_num)) for num in range(6))))
     print(dep_name + ":", join_name + "_" + ec2_id)
