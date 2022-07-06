@@ -1,7 +1,14 @@
-# create s3 bucket
-
 import boto3
 
-client = boto3.client("s3")
+# creates a private s3 bucket
 
-client.create_bucket(Bucket="test-bucket-boto3")
+aws_resource=boto3.resource("s3")
+bucket=aws_resource.Bucket("test-bucket-boto3")
+
+response = bucket.create(  
+    ACL='private',
+    
+    
+)
+
+print(response)

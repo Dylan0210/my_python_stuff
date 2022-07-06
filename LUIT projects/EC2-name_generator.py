@@ -5,8 +5,9 @@ import string
 
 
 print("Welcome to the name generator")
-
+dep = "Marketing", "Accounting", "FinOps"
 dep_list = "Marketing".lower(), "Accounting".lower(), "FinOps".lower()
+dep==dep_list
 dep_name = input("What department are you in?: ")                                                           # Allow the user to input the name of their department that is used in the unique name
 
 while True:
@@ -14,6 +15,7 @@ while True:
         print("---YOUR DEPARTMENT IS NOT AUTHORIZED TO USE THIS GENERATOR---")
         exit()
     else:
+        dep_name == dep == dep_list
         name = input("Please enter your first and last name: ")                                             # Enter name for more unique and readable id
         split_name = name.split(" ")                                                                        # Remove the space between first and last name
         join_name = "_".join(split_name).lower()                                                            # Join first and last name with _
