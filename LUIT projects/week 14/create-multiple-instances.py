@@ -12,14 +12,15 @@ prod = ec2.create_instances(
     TagSpecifications=[
         {
             'ResourceType': 'instance',
-            'Tags': [{'Key': 'Name','Value': 'PROD'},
+            'Tags': [
+                {'Key': 'Name','Value': 'PROD'},
                 {'Key': 'ENV','Value': 'PROD'}
             ]
         }
     ]
 )
 
-print('PROD Instances:'+prod)
+print(prod)
     
 # create 3 instances for DEV
 dev = ec2.create_instances(
@@ -30,11 +31,12 @@ dev = ec2.create_instances(
     TagSpecifications=[
         {
             'ResourceType': 'instance',
-            'Tags': [{'Key': 'Name','Value': 'DEV'},
+            'Tags': [
+                {'Key': 'Name','Value': 'DEV'},
                 {'Key': 'ENV','Value': 'DEV'}
             ]
         }
     ]
 )
 
-print('DEV Instances:'+dev)
+print(dev)
